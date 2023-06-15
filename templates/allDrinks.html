@@ -1,0 +1,17 @@
+{%  extends 'base.html' %}
+
+{% block body %}
+    <a class="btn btn-primary" href="{% url 'addDrink' %}">add</a>
+    <table>
+    {% for drink in drinks %}
+        <tr>
+        <td>
+            drink name: <a href={% url 'getOne' drink.id %}><div class="btn btn-primary">{{ drink.name }}</div></a>
+        </td>
+        <td>
+        drink description: {{ drink.description }}<a href={% url 'delete' drink.id %}><div class="btn btn-danger">delete</div></a>
+        </td>
+
+    {% endfor %}
+    </table>
+{% endblock %}

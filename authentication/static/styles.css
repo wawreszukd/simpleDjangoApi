@@ -1,0 +1,28 @@
+body{
+    background-color: #88986b;
+}
+#box{
+    display: flex;
+
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    background-color: #b4c292;
+    outline:3px solid #818f60;
+    padding: 1% 1% 1% 1%;
+    border-radius: 5%;
+}
+.form-control{
+    background-color: #b4c292;
+    border-color: #727272;
+}
+input, textarea {
+    border: none;
+    background-color : #b4c292;
+
+}
+input:focus, textarea:focus {
+    border: none;
+    background-color : #b4c292;
+
+}
